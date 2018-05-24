@@ -1,0 +1,1 @@
+export {guid} from "./guid";

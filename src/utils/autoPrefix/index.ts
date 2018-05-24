@@ -1,0 +1,1 @@
+export {autoPrefixTime} from "./time";

@@ -1,0 +1,120 @@
+.index-tab-columns {
+	width: 100%;
+	background-color: #ededed;
+
+	.tabs {
+		width: 100%;
+		background-color: #e4e4e6;
+	}
+
+	.tab {
+		float: left;
+		height: 50px;
+		line-height: 50px;
+		text-align: center;
+		transition: all 0.3s;
+		color: black;
+		cursor: pointer;
+
+		&.active {
+			color: darkred;
+			outline: 1px solid white;
+			background-color: white;
+
+			&:before {
+				opacity: 1;
+			}
+
+			&:after {
+				right: 0;
+				background-color: white;
+			}
+		}
+
+		&:before {
+			content: "";
+			display: block;
+			position: absolute;
+			width: 0;
+			height: 0;
+			bottom: -10px;
+			left: 50%;
+			transform: translateX(-50%);
+			opacity: 0;
+			transition: opacity 0.3s;
+			border: 10px solid white;
+			border: {
+				right-color: transparent;
+				bottom: none;
+				left-color: transparent;
+			}
+		}
+
+		&:after {
+			content: "";
+			position: absolute;
+			height: 60%;
+			width: 1px;
+			top: 50%;
+			right: 0;
+			transform: translateY(-50%);
+			transition: background-color 0.3s;
+			background-color: #a3a3a3;
+		}
+	}
+
+	.split {
+		position: absolute;
+		height: 60%;
+		width: 1px;
+		top: 50%;
+		right: 0;
+		transform: translateY(-50%);
+		transition: background-color 0.3s;
+		background-color: #a3a3a3;
+
+		&.left {
+			left: 0;
+		}
+
+		&.right {
+			right: 0;
+		}
+	}
+
+	.items {
+		padding: 40px 10%;
+		text-align: center;
+		transition: opacity 0.3s;
+	}
+
+	.item, .title {
+		text-align: center;
+	}
+
+	.item {
+		display: inline-block;
+		position: relative;
+		margin: 0 20px;
+
+		&:hover .cover {
+			transform: scale(1.1);
+		}
+	}
+
+	.cover {
+		width: 156px;
+		height: 156px;
+		transition: all 0.3s;
+		border-radius: 50%;
+	}
+
+	.title {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		font-size: 20px;
+		color: white;
+	}
+}

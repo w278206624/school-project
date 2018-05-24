@@ -1,0 +1,40 @@
+{
+	"compileOnSave": false,
+	"compilerOptions": {
+		"target": "es5",
+		"module": "esnext",
+		"jsx": "preserve",
+		"allowJs": true,
+		"moduleResolution": "node",
+		"allowSyntheticDefaultImports": true,
+		"noUnusedLocals": true,
+		"removeComments": false,
+		"preserveConstEnums": true,
+		"sourceMap": true,
+		"skipLibCheck": true,
+		"baseUrl": ".",
+		"typeRoots": [
+			"./node_modules/@types",
+			"./src/types"
+		],
+		"lib": [
+			"dom",
+			"es2015",
+			"es2016"
+		],
+		"paths": {
+			"containers/*": [
+				"./src/containers/*"
+			],
+			"components/*": [
+				"./src/components/*"
+			],
+			"utils/*": [
+				"./src/utils/*"
+			],
+			"specUtils/*": [
+				"./src/specUtils/*"
+			]
+		}
+	}
+}

@@ -1,0 +1,31 @@
+.modify-carousel-upload-btn {
+	margin-left: 11px;
+}
+
+.card-item {
+	min-width: 300px;
+	margin: 5px 0;
+	padding: 10px;
+
+	.ant-card-cover {
+		cursor: zoom-in;
+	}
+}
+
+.carousel-card-enter {
+	transform: scale(0);
+
+	&.carousel-card-enter-active {
+		transition: transform 0.3s;
+		transform: scale(1);
+	}
+}
+
+.carousel-card-leave {
+	transform: scale(1);
+
+	&.carousel-card-leave-active {
+		transition: transform 0.3s;
+		transform: scale(0);
+	}
+}

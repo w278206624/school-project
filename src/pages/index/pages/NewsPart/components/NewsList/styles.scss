@@ -1,0 +1,139 @@
+@keyframes block-text-loading {
+	from {
+		opacity: 0.2;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.news-part-news-list {
+	padding: 20px 10%;
+
+	.no-data {
+		margin-bottom: 20px;
+		width: 100%;
+		height: 500px;
+		line-height: 500px;
+		border-radius: 6px;
+		text-align: center;
+		font-size: 128px;
+		background-color: white;
+	}
+
+	.loading {
+		pointer-events: none;
+	}
+
+	.loading-img {
+		width: 100%;
+		line-height: 140px;
+		font-size: 64px;
+		text-align: center;
+		background-color: #f2f2f2;
+	}
+
+	.item {
+		margin-bottom: 20px;
+		width: 100%;
+		min-width: 477px;
+		height: 144px;
+		transition: all 0.3s;
+		box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.1);
+		background-color: white;
+
+		&:hover {
+			box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.3);
+		}
+
+		&.loading {
+			height: 140px;
+		}
+	}
+
+	.text-wrapper {
+		width: 100%;
+		padding: 20px;
+		overflow: hidden;
+	}
+
+	.title, .content {
+		max-width: 100%;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		overflow: hidden;
+	}
+
+	.title, .content, .date, .cover {
+		position: relative;
+		margin: 0;
+		transition: all 0.3s;
+		opacity: 1;
+		background-color: white;
+		overflow: hidden;
+
+		&:before {
+			content: "";
+			display: block;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: -100%;
+			animation: block-text-loading 1.5s infinite linear alternate forwards;
+			animation-play-state: paused;
+			transition: all 1s;
+			background: linear-gradient(to right, #dddddd, #acacac);
+		}
+	}
+
+	.title {
+		margin: 0;
+		height: 27px;
+		font-size: 24px;
+		color: darkred;
+
+		&:before {
+			width: 70%;
+		}
+	}
+
+	.content {
+		margin: 10px 0;
+		height: 20px;
+		font-size: 15px;
+		color: black;
+
+		&:before {
+			width: 100%;
+		}
+	}
+
+	.date {
+		height: 20px;
+		color: #8f8f8f;
+
+		&:before {
+			width: 50%;
+		}
+	}
+
+	.cover {
+		height: 144px;
+	}
+
+	.icon {
+		margin-right: 10px;
+	}
+
+	.page-controller {
+		text-align: center;
+	}
+
+	.loading-block {
+		&:before {
+			left: 0;
+			animation-play-state: running;
+		}
+	}
+}

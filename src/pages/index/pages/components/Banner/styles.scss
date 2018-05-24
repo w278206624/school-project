@@ -1,0 +1,64 @@
+.pages-banner {
+	width: 100vw;
+	padding: 40px 10%;
+
+	.color-block {
+		display: block;
+		position: absolute;
+		height: 0;
+		top: 0;
+		left: 0;
+		border-style: solid;
+		border: {
+			top: none;
+			left: none;
+			right-color: transparent;
+		}
+	}
+
+	.part-wrapper {
+		position: static;
+	}
+
+	.part-inner {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	.part {
+		margin: 0;
+		font-size: 64px;
+	}
+
+	.breadcrumb {
+		position: relative;
+		font-size: 18px;
+		transition: color 0.3s;
+		color: darkred;
+
+		&:hover:before {
+			width: 100%;
+		}
+
+		&:before {
+			content: "";
+			display: block;
+			position: absolute;
+			width: 0;
+			bottom: -5px;
+			left: 0;
+			transition: all 0.3s;
+			border-bottom: 1px solid black;
+		}
+	}
+
+	.title {
+		padding-right: 0;
+		top: 0;
+		right: 0;
+		text-align: right;
+		font-size: 30px;
+		color: darkred;
+	}
+}

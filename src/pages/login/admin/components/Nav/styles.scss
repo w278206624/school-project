@@ -1,0 +1,25 @@
+.admin-nav-item {
+	margin: 10px 0;
+}
+
+.admin-nav-item-title {
+	flex: 1;
+}
+
+.admin-nav-item-header {
+	display: flex;
+}
+
+.admin-nav-item-action {
+	margin: 0 10px;
+	transition: color 0.3s;
+	font-size: 18px;
+
+	&:hover {
+		color: #40a9ff;
+	}
+}
+
+.admin-nav-save {
+	margin-right: 10px;
+}

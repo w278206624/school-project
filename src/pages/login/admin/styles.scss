@@ -1,0 +1,24 @@
+@import "/static/antd.min.css";
+
+img {
+	width: 100%;
+	height: 100%;
+}
+
+.menu-collapse .ant-menu-item {
+	padding: 0 !important;
+	padding-left: 4px !important;
+}
+
+.antd-menu-overwrite {
+	position: fixed;
+	width: 256px;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.antd-content-overwrite {
+	position: relative;
+	padding: 5px 10px;
+}

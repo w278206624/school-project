@@ -1,0 +1,30 @@
+.admin-article-card-title {
+	.info {
+		display: flex;
+		align-items: center;
+
+		> div {
+			flex: 1;
+		}
+	}
+
+	.title {
+		display: inline-block;
+		max-width: 100%;
+	}
+
+	.title, .path {
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+	}
+
+	.path {
+		color: gray;
+		max-width: 45%;
+	}
+
+	.date {
+		text-align: right;
+	}
+}

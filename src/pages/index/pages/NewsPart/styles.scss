@@ -1,0 +1,50 @@
+.pages-news-part {
+	.item {
+		margin: 20px;
+		min-width: 477px;
+		width: 100%;
+		transition: all 0.3s;
+		box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.1);
+		background-color: white;
+
+		&:hover {
+			box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.3);
+		}
+	}
+
+	.text-wrapper {
+		display: inline-block;
+		overflow: hidden;
+		max-width: 80%;
+		padding-top: 20px;
+		padding-left: 20px;
+	}
+
+	.title, .content {
+		display: block;
+		max-width: 100%;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		overflow: hidden;
+	}
+
+	.title {
+		margin: 0;
+		font-size: 24px;
+		color: darkred;
+	}
+
+	.content {
+		margin: 10px 0;
+		font-size: 15px;
+		color: black;
+	}
+
+	.cover {
+		height: 144px;
+	}
+
+	.date {
+		color: #8f8f8f;
+	}
+}
